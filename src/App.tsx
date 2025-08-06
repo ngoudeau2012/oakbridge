@@ -6,6 +6,7 @@ import AboutUs from './pages/AboutUs';
 import MarketInsights from './pages/MarketInsights';
 import ContactUs from './pages/ContactUs';
 import './App.css';
+import { Analytics } from '@vercel/analytics/react';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
             <Route path="/market-insights" element={<MarketInsights />} />
             <Route path="/contact" element={<ContactUs />} />
           </Routes>
+          <Analytics />
         </div>
       </Router>
     </ThemeProvider>
